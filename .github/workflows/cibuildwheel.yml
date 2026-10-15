@@ -42,7 +42,7 @@ jobs:
         uses: pypa/cibuildwheel@adba99c781d3746d38b3a09b1cf797965bcb7fe6 # v4.3.0
         env:
           CIBW_SKIP: "pp* *-musllinux*"
-          CIBW_BUILD: "cp311-* cp314-*"
+          CIBW_BUILD: "cp311-* cp315-*"
           CIBW_ARCHS: ${{ matrix.arch }}
           CIBW_BUILD_FRONTEND: build
           CIBW_MANYLINUX_X86_64_IMAGE: manylinux_2_28
